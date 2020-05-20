@@ -23,6 +23,27 @@ const mapDispatchToProps = (dispatch) => {
           value,
         },
       }),
+    fetchCounters: () => {
+      dispatch({
+        type: "COUNTER/FETCH_COUNTERS",
+      })
+    },
+    decrease: (id) => {
+      dispatch({
+        type: "COUNTER/DECREASE",
+        payload: {
+          id,
+        },
+      })
+    },
+    encrease: (id) => {
+      dispatch({
+        type: "COUNTER/INCREASE",
+        payload: {
+          id,
+        },
+      })
+    }
   };
 };
 
