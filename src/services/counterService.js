@@ -18,5 +18,3 @@ class counterService {
     }
 
 export default new counterService();
-
-
